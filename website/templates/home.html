@@ -1,0 +1,50 @@
+
+ {% extends "base.html" %} {% block title %}Home{% endblock %}
+
+      {% block content
+        %}
+         
+  <!DOCTYPE html>
+<html>
+<head>
+  
+	<title>Audio Visualizer</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body bgcolor="red"> 
+  
+	<canvas id="canvas" ></canvas> 
+	<canvas id="canvasBackground"></canvas>
+	<!-- <img id="musicIcon" src="{{ url_for('static', filename='img/music.png') }}"> -->
+  <h1 id="musicIcon">Audio Visualizer</h1>
+	<label > <i class="fa fa-music"></i> + <p align="right">choose a song</p>
+		<input type="file" id="music" accept="audio/*" /> 
+	</label>
+
+	<ul>
+		<li><button id="line"><img src="{{ url_for('static', filename='img/line.png') }}"></button></li>
+
+		<li><button id="bars"><img src="{{ url_for('static', filename='img/bars.png') }}"></button></li>
+		
+		<li><button id="dots"><img src="{{ url_for('static', filename='img/dots.png') }}"></button></li>
+	</ul>
+
+	<audio id="audio" controls></audio>
+	
+	 <!--<div id="stars"></div>
+	 <div id="stars2"></div> -->
+
+	<script
+      type="text/javascript"
+      src="{{ url_for('static', filename='script.js') }}"
+    ></script>
+    
+</body>
+
+</html>
+
+{% endblock %}

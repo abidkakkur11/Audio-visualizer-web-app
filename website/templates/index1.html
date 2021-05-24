@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Audio Visualizer</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+	<canvas id="canvas"></canvas> 
+	<canvas id="canvasBackground"></canvas>
+<!--	<img id="musicIcon" src="img/music.png"> -->
+
+	<label> <i class="fa fa-music"></i> + <p>choose a song</p>
+		<input type="file" id="music" accept="audio/*" /> 
+	</label>
+
+	<ul>
+		<li><button id="line"><img src="img/line.png"></button></li>
+
+		<li><button id="bars"><img src="img/bars.png"></button></li>
+		
+		<li><button id="dots"><img src="img/dots.png"></button></li>
+	</ul>
+
+	<audio id="audio" controls></audio>
+	
+	<div id="stars"></div>
+	<div id="stars2"></div>
+
+	<script
+      type="text/javascript"
+      src="{{ url_for('static', filename='script.js') }}"
+    ></script>
+
+</body>
+</html>
