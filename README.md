@@ -12,7 +12,7 @@ Team id:-
 BFH/recy1nttE04UZ7Dpq/2021
 
 Product walkthrough
-
+https://drive.google.com/file/d/19KNaHfoOYsy3oJHzZ_Ad3m-lbG38qwyP/view?usp=drivesdk
 
 Working:-
 main.py is our executable file. we can run it. It is embedded to the base.html file in templates. Then we can see a login page. We can also traverse to signup page from login page. Next is home page.
