@@ -25,4 +25,11 @@ How to configure?
 Clone the file from this repo and run through terminal.
 
 How to run?
-git clone 
+In any directory,
+
+git clone https://github.com/nishalkp/Audio-visualizer-web-app.git
+
+cd Audio-visualizer-web-app
+python main.py
+
+Paste the IP address in any browser.
