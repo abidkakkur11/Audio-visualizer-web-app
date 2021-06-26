@@ -27,7 +27,7 @@ Clone the file from this repo and run through terminal.
 How to run?
 In any directory,
 
-git clone https://github.com/nishalkp/Audio-visualizer-web-app.git
+git clone https://github.com/abidkakkur11/Audio-visualizer-web-app
 
 cd Audio-visualizer-web-app
 python main.py
